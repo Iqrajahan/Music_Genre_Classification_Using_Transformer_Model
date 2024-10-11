@@ -15,19 +15,23 @@ Data Preprocessing & EDA:
 Conducted Exploratory Data Analysis (EDA) to understand feature distributions, correlations, and outliers.
 Standardized the dataset to improve model performance by scaling features using StandardScaler.
 Applied an 80-10-10 split for training, validation, and testing datasets.
+
 Model Development:
 
 Designed a Transformer model to handle tabular data, incorporating positional encoding with 3 encoder layers and a multi-head attention mechanism (16 heads).
 Custom PyTorch Dataset and DataLoader classes were implemented for efficient data batching and shuffling.
+
 Training Strategy:
 
 Trained the model using AdamW optimizer and Cross-Entropy Loss over 40 epochs.
 Incorporated learning rate scheduling with ReduceLROnPlateau to dynamically adjust learning rates based on validation loss.
 Implemented early stopping to prevent overfitting, halting training when validation loss plateaued.
+
 Performance Metrics:
 
-Achieved X% accuracy on the test set.
+Achieved 70% accuracy on the test set.
 Calculated additional metrics such as Precision, Recall, and F1 Score to evaluate model performance comprehensively.
+
 Outcome:
 
 Successfully built a robust classification model for tabular data, leveraging deep learning techniques to improve generalization and performance.
